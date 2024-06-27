@@ -1,0 +1,5 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto
+
+# sh files must always use LF to prevent issues in docker containers
+*.sh text eol=lf

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtekTiv-Interfaces", "Interfaces\ProtekTiv-Interfaces.csproj", "{CA205DC7-DB3D-4EFF-924D-8667D5F29C50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtekTiv-Services", "Services\ProtekTiv-Services.csproj", "{F34752D4-191E-417C-A539-DB0DF1932324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtekTiv-Extentions", "Extentions\ProtekTiv-Extentions.csproj", "{8D541D6A-3DC5-4BAB-8BAD-26BC11A3F00C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA205DC7-DB3D-4EFF-924D-8667D5F29C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA205DC7-DB3D-4EFF-924D-8667D5F29C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA205DC7-DB3D-4EFF-924D-8667D5F29C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA205DC7-DB3D-4EFF-924D-8667D5F29C50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34752D4-191E-417C-A539-DB0DF1932324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34752D4-191E-417C-A539-DB0DF1932324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34752D4-191E-417C-A539-DB0DF1932324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34752D4-191E-417C-A539-DB0DF1932324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D541D6A-3DC5-4BAB-8BAD-26BC11A3F00C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D541D6A-3DC5-4BAB-8BAD-26BC11A3F00C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D541D6A-3DC5-4BAB-8BAD-26BC11A3F00C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D541D6A-3DC5-4BAB-8BAD-26BC11A3F00C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
