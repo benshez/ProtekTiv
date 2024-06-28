@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
     <ProjectReference Include="..\ProtekTiv.Core.Caching\ProtekTiv.Core.Caching.csproj" />
     <ProjectReference Include="..\ProtekTiv.Core.Interfaces\ProtekTiv.Core.Interfaces.csproj" />    

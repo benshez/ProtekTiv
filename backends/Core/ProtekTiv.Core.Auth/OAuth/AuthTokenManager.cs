@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json;
 using System.Net.Http.Headers;
 using System.Text;
 using ProtekTiv.Core.Interfaces.Caching.MemoryCache;
@@ -48,7 +48,7 @@ public class AuthTokenManager
 
         responseMessage.EnsureSuccessStatusCode();
 
-        var tokenResponse = JsonConvert.DeserializeObject<AuthorityHostAuthTokenResponse>(responseContentAsString);
+        var tokenResponse = JsonSerializer.Deserialize<AuthorityHostAuthTokenResponse>(responseContentAsString);
 
         if (tokenResponse != null) return string.IsNullOrEmpty(tokenResponse.AccessToken) ? string.Empty : tokenResponse.AccessToken;
 
@@ -58,7 +58,7 @@ public class AuthTokenManager
 
     private HttpRequestMessage GenerateAuthTokenRequest(string audience)
     {
-        var content = JsonConvert.SerializeObject(new Dictionary<string, string>
+        var content = JsonSerializer.Serialize(new Dictionary<string, string>
             {
                 {"client_id", string.IsNullOrEmpty(_appSettings.Auth0ClientId) ? string.Empty : _appSettings.Auth0ClientId},
                 {"client_secret", string.IsNullOrEmpty(_appSettings.Auth0ClientSecret) ? string.Empty : _appSettings.Auth0ClientSecret},
