@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Serilog" Version="4.0.0" />
-	  <ProjectReference Include="..\Interfaces\ProtekTiv.Interfaces.csproj" />
+	  <ProjectReference Include="..\ProtekTiv.Core.Interfaces\ProtekTiv.Core.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Interfaces\ProtekTiv.Interfaces.csproj"/>
-    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0"/>
+    <ProjectReference Include="..\ProtekTiv.Core.Interfaces\ProtekTiv.Core.Interfaces.csproj" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
     <None Include="README.md" pack="true" PackagePath="." />
   </ItemGroup>  
   

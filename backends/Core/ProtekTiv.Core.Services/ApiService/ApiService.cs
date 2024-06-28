@@ -1,6 +1,6 @@
 ﻿using ProtekTiv.Core.Interfaces.Services;
 
-namespace ProtekTiv.Core.Services;
+namespace ProtekTiv.Core.Services.ApiService;
 
 public class ApiService<T>(HttpClient httpClient) : IApiService<T>
 {

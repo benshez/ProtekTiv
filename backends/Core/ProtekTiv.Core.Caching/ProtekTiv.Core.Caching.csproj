@@ -9,7 +9,7 @@
   
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
-    <ProjectReference Include="..\Interfaces\ProtekTiv.Interfaces.csproj" />
+    <ProjectReference Include="..\ProtekTiv.Core.Interfaces\ProtekTiv.Core.Interfaces.csproj" />
     <None Include="README.md" pack="true" PackagePath="." />
   </ItemGroup>
 
