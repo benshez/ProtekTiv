@@ -1,4 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -11,4 +12,5 @@
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0"/>
     <None Include="README.md" pack="true" PackagePath="." />
   </ItemGroup>  
+  
 </Project>
