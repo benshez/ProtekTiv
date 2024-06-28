@@ -4,7 +4,7 @@ VERSION=$($DIR/version.sh)
 set -e
 
 # Define variables
-SOLUTION_FILE="ProtekTiv-Core.sln"
+SOLUTION_FILE="ProtekTiv.Core.sln"
 PACKAGE_FOLDER="../.nupkgs/$VERSION"
 PUBLISH_FOLDER="../.publish/$VERSION"
 # Clean previous builds

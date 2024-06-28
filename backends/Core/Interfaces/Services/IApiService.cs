@@ -1,4 +1,4 @@
-﻿namespace ProtekTiv.Interfaces;
+﻿namespace ProtekTiv.Core.Interfaces.Services;
 
 public interface IApiService<T>
 {

@@ -1,14 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\Interfaces\ProtekTiv-Interfaces.csproj"/>
-    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
+    <ProjectReference Include="..\Interfaces\ProtekTiv.Interfaces.csproj" />
     <None Include="README.md" pack="true" PackagePath="." />
-  </ItemGroup>  
+  </ItemGroup>
 </Project>

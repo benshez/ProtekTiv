@@ -1,6 +1,6 @@
-﻿using ProtekTiv.Interfaces;
+﻿using ProtekTiv.Core.Interfaces.Services;
 
-namespace ProtekTiv.Services;
+namespace ProtekTiv.Core.Services;
 
 public class ApiService<T>(HttpClient httpClient) : IApiService<T>
 {
