@@ -1,6 +1,6 @@
 ﻿namespace ProtekTiv.Core.Interfaces.Caching.MemoryCache;
 
-public interface IProvider
+public interface ICacheProvider
 {
     void Insert<T>(string key, T value, DateTimeOffset expirationDateTime, CancellationToken? evictionToken = null);
     void EvictAll();

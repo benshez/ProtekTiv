@@ -2,7 +2,7 @@
 
 namespace ProtekTiv.Core.Auth.OAuth;
 
-public class AuthorityHostAuthTokenResponse
+public class TokenResponse
 {
     [JsonPropertyName("access_token")]
     public string? AccessToken { get; set; }

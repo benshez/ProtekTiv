@@ -1,6 +1,6 @@
 ﻿namespace ProtekTiv.Core.Extentions.Startup;
 
-public static class StartupExtension
+public static class Extension
 {
 
 }

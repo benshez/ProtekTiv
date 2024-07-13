@@ -2,7 +2,7 @@
 
 namespace ProtekTiv.Core.Services.ApiService;
 
-public class ApiService<T>(HttpClient httpClient) : IApiService<T>
+public class Service<T>(HttpClient httpClient) : IApiService<T>
 {
     private readonly HttpClient _httpClient = httpClient;
 

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ProtekTiv.Core.Interfaces\ProtekTiv.Core.Interfaces.csproj" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
     <None Include="README.md" pack="true" PackagePath="." />
   </ItemGroup>  
   

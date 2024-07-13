@@ -6,22 +6,25 @@ using ProtekTiv.Core.Interfaces.ApplicationSettings;
 
 namespace ProtekTiv.Core.Auth.OAuth;
 
-public class AuthTokenManager
+public class TokenManager
 {
     private static readonly SemaphoreSlim SemaphoreSlim = new(1, 1);
     private readonly IApplicationSettings _appSettings;
-    private readonly IProvider _cache;
+    private readonly ICacheProvider _cache;
     private readonly HttpClient _httpClient;
 
-    public AuthTokenManager(
+    public TokenManager(
         IApplicationSettings appSettings,
         HttpClient httpClient,
-        IProvider cache)
+        ICacheProvider cache)
     {
         _appSettings = appSettings;
         _cache = cache;
         _httpClient = httpClient;
-        _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        _httpClient
+            .DefaultRequestHeaders
+            .Accept
+            .Add(new MediaTypeWithQualityHeaderValue("application/json"));
     }
 
     public async Task<string> GetAuthToken(string tokenCachekey, string audience)
@@ -48,7 +51,7 @@ public class AuthTokenManager
 
         responseMessage.EnsureSuccessStatusCode();
 
-        var tokenResponse = JsonSerializer.Deserialize<AuthorityHostAuthTokenResponse>(responseContentAsString);
+        var tokenResponse = JsonSerializer.Deserialize<TokenResponse>(responseContentAsString);
 
         if (tokenResponse != null) return string.IsNullOrEmpty(tokenResponse.AccessToken) ? string.Empty : tokenResponse.AccessToken;
 

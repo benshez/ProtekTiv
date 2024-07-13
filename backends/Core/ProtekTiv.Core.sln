@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtekTiv.Core.Caching", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtekTiv.Core.Logger", "ProtekTiv.Core.Logger\ProtekTiv.Core.Logger.csproj", "{30206DC2-1EF9-435C-9CD6-B2C9A04E9ACF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtekTiv.Core.Auth", "ProtekTiv.Core.Auth\ProtekTiv.Core.Auth.csproj", "{A8DA1BDC-9410-47AD-B863-5CF69609017A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtekTiv.Core.Auth", "ProtekTiv.Core.Auth\ProtekTiv.Core.Auth.csproj", "{A8DA1BDC-9410-47AD-B863-5CF69609017A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtekTiv.Core.UnitTests", "ProtekTiv.Core.UnitTests\ProtekTiv.Core.UnitTests.csproj", "{281C6421-461F-4E58-B1B3-71E4697C29AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{A8DA1BDC-9410-47AD-B863-5CF69609017A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8DA1BDC-9410-47AD-B863-5CF69609017A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8DA1BDC-9410-47AD-B863-5CF69609017A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{281C6421-461F-4E58-B1B3-71E4697C29AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281C6421-461F-4E58-B1B3-71E4697C29AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281C6421-461F-4E58-B1B3-71E4697C29AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281C6421-461F-4E58-B1B3-71E4697C29AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

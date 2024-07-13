@@ -3,7 +3,7 @@ using Microsoft.Extensions.Primitives;
 using ProtekTiv.Core.Interfaces.Caching.MemoryCache;
 
 namespace ProtekTiv.Core.Caching.MemoryCache;
-public class Provider(IMemoryCache memoryCache) : IProvider
+public class Provider(IMemoryCache memoryCache) : ICacheProvider
 {
     private readonly IMemoryCache _memoryCache = memoryCache;
     private CancellationTokenSource _evictionTokenSource = new();

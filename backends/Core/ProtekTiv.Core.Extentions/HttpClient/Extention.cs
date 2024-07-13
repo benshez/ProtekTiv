@@ -3,10 +3,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace ProtekTiv.Core.Extentions.HttpClient;
 
-public static class HttpClientExtention
+public static class Extention
 {
-    public static IServiceCollection RegisterHttpClients(this IServiceCollection services,
-       IConfiguration configuration)
+    public static IServiceCollection RegisterHttpClients(
+        this IServiceCollection services,
+        IConfiguration configuration)
     {
         var resources = configuration.GetSection("UriResources");
 
