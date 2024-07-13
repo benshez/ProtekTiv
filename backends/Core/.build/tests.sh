@@ -5,6 +5,6 @@
 #PACKAGE_FOLDER = $3
 #VERSION        = $4
 
-echo "Packaging project $1 into $3/$1 $4..."
+echo "Testing project $2 version $4..."
 
-dotnet pack $2 -c "Release" -o $3/$1 -v m
+dotnet test $2
